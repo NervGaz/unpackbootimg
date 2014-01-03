@@ -19,6 +19,7 @@
 #define _BOOT_IMAGE_H_
 
 typedef struct boot_img_hdr boot_img_hdr;
+typedef struct loki_hdr loki_hdr;
 
 #define BOOT_MAGIC "ANDROID!"
 #define BOOT_MAGIC_SIZE 8
