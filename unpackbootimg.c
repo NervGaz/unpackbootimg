@@ -83,7 +83,7 @@ int main(int argc, char** argv)
 
     //printf("Reading header...\n");
     fread(&header, sizeof(header), 1, f);
-    lseek(f, 0x400, SEEK_SET);
+    fseek(f, 0x400, SEEK_SET);
     fread(&lheader, sizeof(lheader), 1, f);
     printf("BOARD_KERNEL_CMDLINE %s\n", header.cmdline);
     printf("BOARD_KERNEL_BASE %08x\n", header.kernel_addr - 0x00008000);
